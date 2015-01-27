@@ -10,17 +10,17 @@
 
 #define kTextColor [UIColor whiteColor]
 /** 窗口的高度 */
-#define kWindowHeight 20
+const CGFloat kWindowHeight = 20;
 /** 动画执行的时间 */
-#define kanimationDuration 0.5
+const CGFloat kanimationDuration = 0.5;
 /** 窗口停留的时间 */
-#define kanimationDelay 1.25
+const CGFloat kanimationDelay = 1.25;
 /** 文字字体 */
 #define kFont [UIFont systemFontOfSize:12]
+// 全局变量
+const UIWindow *_window = nil;
 
 @implementation TQStatusBarHUD
-// 全局变量
-UIWindow *_window = nil;
 
 /**
  * 显示指定信息
