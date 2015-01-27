@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZF-hD-r8u">
+                                <rect key="frame" x="270" y="177" width="60" height="30"/>
+                                <state key="normal" title="显示成功">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSeccess:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wad-r1-lLE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS4-dF-hE7">
+                                <rect key="frame" x="270" y="264" width="60" height="30"/>
+                                <state key="normal" title="显示失败">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showError:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yA4-RL-jO8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EV-gb-Woc">
+                                <rect key="frame" x="271" y="341" width="58" height="30"/>
+                                <state key="normal" title="下载中...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloading:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rjq-Ph-LrV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzy-cu-JMB">
+                                <rect key="frame" x="263" y="419" width="75" height="30"/>
+                                <state key="normal" title="下载完成！">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadDone:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j9V-cq-CQu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lzy-cu-JMB" firstAttribute="top" secondItem="1EV-gb-Woc" secondAttribute="bottom" constant="48" id="9NK-4V-HKh"/>
+                            <constraint firstItem="VZF-hD-r8u" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="157" id="BGN-qe-L3M"/>
+                            <constraint firstAttribute="centerX" secondItem="1EV-gb-Woc" secondAttribute="centerX" id="ILe-uM-vgW"/>
+                            <constraint firstItem="1EV-gb-Woc" firstAttribute="top" secondItem="PS4-dF-hE7" secondAttribute="bottom" constant="47" id="NTO-Gu-QaW"/>
+                            <constraint firstAttribute="centerX" secondItem="VZF-hD-r8u" secondAttribute="centerX" id="UaD-Qm-gUf"/>
+                            <constraint firstAttribute="centerX" secondItem="Lzy-cu-JMB" secondAttribute="centerX" id="jka-kK-Ehg"/>
+                            <constraint firstAttribute="centerX" secondItem="PS4-dF-hE7" secondAttribute="centerX" id="obQ-MS-Ejl"/>
+                            <constraint firstItem="PS4-dF-hE7" firstAttribute="top" secondItem="VZF-hD-r8u" secondAttribute="bottom" constant="57" id="qh7-P9-rpf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
