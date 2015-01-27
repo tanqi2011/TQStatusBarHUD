@@ -34,31 +34,31 @@
                                     <action selector="showError:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yA4-RL-jO8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EV-gb-Woc">
-                                <rect key="frame" x="271" y="341" width="58" height="30"/>
-                                <state key="normal" title="下载中...">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="downloading:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rjq-Ph-LrV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzy-cu-JMB">
-                                <rect key="frame" x="263" y="419" width="75" height="30"/>
-                                <state key="normal" title="下载完成！">
+                                <rect key="frame" x="243" y="434" width="114" height="30"/>
+                                <state key="normal" title="下载完成！(消失)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="downloadDone:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j9V-cq-CQu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EV-gb-Woc">
+                                <rect key="frame" x="244" y="394" width="112" height="30"/>
+                                <state key="normal" title="下载中...(不消失)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloading:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rjq-Ph-LrV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Lzy-cu-JMB" firstAttribute="top" secondItem="1EV-gb-Woc" secondAttribute="bottom" constant="48" id="9NK-4V-HKh"/>
+                            <constraint firstItem="Lzy-cu-JMB" firstAttribute="top" secondItem="1EV-gb-Woc" secondAttribute="bottom" constant="10" id="9NK-4V-HKh"/>
                             <constraint firstItem="VZF-hD-r8u" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="157" id="BGN-qe-L3M"/>
                             <constraint firstAttribute="centerX" secondItem="1EV-gb-Woc" secondAttribute="centerX" id="ILe-uM-vgW"/>
-                            <constraint firstItem="1EV-gb-Woc" firstAttribute="top" secondItem="PS4-dF-hE7" secondAttribute="bottom" constant="47" id="NTO-Gu-QaW"/>
+                            <constraint firstItem="1EV-gb-Woc" firstAttribute="top" secondItem="PS4-dF-hE7" secondAttribute="bottom" constant="100" id="NTO-Gu-QaW"/>
                             <constraint firstAttribute="centerX" secondItem="VZF-hD-r8u" secondAttribute="centerX" id="UaD-Qm-gUf"/>
                             <constraint firstAttribute="centerX" secondItem="Lzy-cu-JMB" secondAttribute="centerX" id="jka-kK-Ehg"/>
                             <constraint firstAttribute="centerX" secondItem="PS4-dF-hE7" secondAttribute="centerX" id="obQ-MS-Ejl"/>

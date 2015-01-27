@@ -11,10 +11,12 @@
 #define kTextColor [UIColor whiteColor]
 /** 窗口的高度 */
 const CGFloat kWindowHeight = 20;
+/** 窗口透明度 */
+const CGFloat kWindowAlpha = 0.7;
 /** 动画执行的时间 */
 const CGFloat kanimationDuration = 0.5;
 /** 窗口停留的时间 */
-const CGFloat kanimationDelay = 1.25;
+const CGFloat kanimationDelay = 0.8;
 /** 文字字体 */
 #define kFont [UIFont systemFontOfSize:12]
 // 全局变量
@@ -43,6 +45,7 @@ const UIWindow *_window = nil;
     // 获得自定义窗口
     _window = [[UIWindow alloc] init];
     _window.backgroundColor = [UIColor blackColor];
+    _window.alpha = kWindowAlpha;
     _window.frame = CGRectMake(0, -kWindowHeight, [UIScreen mainScreen].bounds.size.width, kWindowHeight);
     // UIWindowLevelAlert > UIWindowLevelStatus > UIWindowLevelNormal
     // 状态栏也是一个window
@@ -108,6 +111,7 @@ const UIWindow *_window = nil;
     
     _window = [[UIWindow alloc] init];
     _window.backgroundColor = [UIColor blackColor];
+    _window.alpha = kWindowAlpha;
     _window.windowLevel = UIWindowLevelAlert;
     _window.frame = CGRectMake(0, -kWindowHeight, SW, kWindowHeight);
     _window.hidden = NO;
